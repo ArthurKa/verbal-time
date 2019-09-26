@@ -1,0 +1,21 @@
+{
+  "name": "verbal-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "verbalTime.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurKa/verbal-time.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurKa/verbal-time/issues"
+  },
+  "homepage": "https://github.com/ArthurKa/verbal-time#readme"
+}
