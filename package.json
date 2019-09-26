@@ -1,21 +1,32 @@
 {
   "name": "verbal-time",
   "version": "1.0.0",
-  "description": "",
+  "description": "Spells time with words",
   "main": "verbalTime.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArthurKa/verbal-time.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "verbal time",
+    "time in words",
+    "spell time",
+    "write time"
+  ],
+  "author": "ArthurKa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArthurKa/verbal-time/issues"
   },
-  "homepage": "https://github.com/ArthurKa/verbal-time#readme"
+  "homepage": "https://github.com/ArthurKa/verbal-time#readme",
+  "dependencies": {
+    "decline-word": "^1.0.3"
+  },
+  "devDependencies": {}
 }
