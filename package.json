@@ -1,6 +1,6 @@
 {
   "name": "verbal-time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spells time with words",
   "main": "verbalTime.js",
   "directories": {

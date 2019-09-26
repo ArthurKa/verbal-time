@@ -1,4 +1,4 @@
-Spells time with words. Supports only Russian and Ukrainian languages.
+Spells time with words. Supports only **Russian** and **Ukrainian** languages.
 
 ## Installation
 `verbal-time` is available via npm:
@@ -22,8 +22,8 @@ const verbalTime = require('verbal-time')({ lang: 'ua' });
 
 console.log(verbalTime(new Date('2019-09-27 15:00')));  // Тертя дня
 console.log(verbalTime(new Date('2019-09-27 19:20')));  // 20 хвилин на восьму
-console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 п'ята
 console.log(verbalTime(new Date('2019-09-27 06:30')));  // Пів на сьому
+console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 п'ята
 
 verbalTime({ spellCountDownMinutes: true });
 console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 хвилин п'ята
@@ -38,7 +38,7 @@ console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 хвилин 
 const verbalTime = require('verbal-time')({ countDownFrom: 35 });
 
 console.log(verbalTime(new Date('2019-09-27 16:34')));  // 34 минуты пятого
-console.log(verbalTime(new Date('2019-09-27 06:45')));  // Без 15 семь
+console.log(verbalTime(new Date('2019-09-27 16:35')));  // Без 25 пять
 ```
 
 `spellCountDownMinutes`: Boolean (default **false**).
@@ -51,7 +51,7 @@ verbalTime({ spellCountDownMinutes: true });
 console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 минут десять
 ```
 
-`spellLastMinute`: Boolean (default **true**) — same as `spellCountDownMinutes`, but only for last minute every hour.
+`spellLastMinute`: Boolean (default **true**) — same as `spellCountDownMinutes`, but only for one last minute every hour.
 ### Example
 ``` js
 const verbalTime = require('verbal-time');
