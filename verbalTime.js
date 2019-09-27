@@ -7,17 +7,27 @@ const settings = new function Settings() {
   let _lang = 'ru';
   let _countDownFrom = 30;
   let _spellCountDownMinutes = false;
-  let _spellLastMinute = true;
+  let _spellLastMinuteAsWord = true;
 
-  let _spellLastMinutethisWarned = false;
+  let _spellLastMinuteAsWordIsWarned = false;
 
   Object.defineProperties(this, {
+    apply: {
+      value: obj => {
+        throwIf.notEnumerableProperty(this, obj);
+        for(const key in obj) {
+          this[key] = obj[key];
+        }
+      },
+    },
+
     lang: {
       set: lang => {
         throwIf.notAllowedLang({ lang });
         _lang = lang;
       },
       get: () => _lang,
+      enumerable: true,
     },
     countDownFrom: {
       set: countDownFrom => {
@@ -25,6 +35,7 @@ const settings = new function Settings() {
         _countDownFrom = Math.round(countDownFrom);
       },
       get: () => _countDownFrom,
+      enumerable: true,
     },
     spellCountDownMinutes: {
       set: spellCountDownMinutes => {
@@ -32,25 +43,21 @@ const settings = new function Settings() {
         _spellCountDownMinutes = spellCountDownMinutes;
       },
       get: () => _spellCountDownMinutes,
+      enumerable: true,
     },
-    spellLastMinute: {
-      set: spellLastMinute => {
-        throwIf.notBoolean({ spellLastMinute });
-        if(!_spellLastMinutethisWarned && this.spellCountDownMinutes) {
-          console.warn('Note: there is no sence to change "spellLastMinute" setting value because "spellCountDownMinutes" is true.');
-          _spellLastMinutethisWarned = true;
+    spellLastMinuteAsWord: {
+      set: spellLastMinuteAsWord => {
+        throwIf.notBoolean({ spellLastMinuteAsWord });
+        if(!_spellLastMinuteAsWordIsWarned && this.spellCountDownMinutes) {
+          console.warn('Note: there is no sence to change "spellLastMinuteAsWord" setting value because "spellCountDownMinutes" is true.');
+          _spellLastMinuteAsWordIsWarned = true;
         }
-        _spellLastMinute = spellLastMinute;
+        _spellLastMinuteAsWord = spellLastMinuteAsWord;
       },
-      get: () => _spellLastMinute,
+      get: () => _spellLastMinuteAsWord,
+      enumerable: true,
     },
   });
-
-  this.apply = obj => {
-    for(const key in obj) {
-      this[key] = obj[key];
-    }
-  };
 };
 
 function verbalTime(time = new Date()) {
@@ -75,14 +82,14 @@ function verbalTime(time = new Date()) {
     return `${m} ${ph.minute2(m)} ${lessLimitAnd30[lang][(h+1)%12]}`;
   }
 
-  const m2 = 60-m;
+  const m60 = 60-m;
   if(settings.spellCountDownMinutes) {
-    return `${ph.without} ${m2} ${ph.minute3(m2)} ${more30[lang][h%12]}`;
+    return `${ph.without} ${m60} ${ph.minute3(m60)} ${more30[lang][h%12]}`;
   }
-  if(settings.spellLastMinute && m2 === 1) {
+  if(settings.spellLastMinuteAsWord && m60 === 1) {
     return `${ph.without} ${ph.minute} ${more30[lang][h%12]}`;
   }
-  return `${ph.without} ${m2} ${more30[lang][h%12]}`;
+  return `${ph.without} ${m60} ${more30[lang][h%12]}`;
 }
 
 module.exports = verbalTime;

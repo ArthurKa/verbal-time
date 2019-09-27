@@ -46,20 +46,22 @@ console.log(verbalTime(new Date('2019-09-27 16:35')));  // Без 25 пять
 ### Example
 ``` js
 const verbalTime = require('verbal-time');
+
 console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 десять
 
 verbalTime({ spellCountDownMinutes: true });
 console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 минут десять
 ```
 
-`spellLastMinute`: Boolean (default **true**) — same as `spellCountDownMinutes`, but only for one last minute every hour.
+`spellLastMinuteAsWord`: Boolean (default **true**) — to spell "1" or "минуты" last minute every hour.
 ### Example
 ``` js
 const verbalTime = require('verbal-time');
-console.log(verbalTime(new Date('2019-09-27 21:79')));  // Без 1 десять
 
-verbalTime({ spellCountDownMinutes: true });
-console.log(verbalTime(new Date('2019-09-27 21:79')));  // Без 1 минуты десять
+console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без минуты десять
+
+verbalTime({ spellLastMinuteAsWord: false });
+console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
 Your improve suggestions and bug reports are welcome any time.

@@ -40,5 +40,13 @@ module.exports = {
         }
       }
     },
+    notEnumerableProperty(obj, props) {
+      const keys = Object.keys(obj);
+      for(const prop in props) {
+        if(!keys.includes(prop)) {
+          throw new Error(`Unknown setting property as "${prop}".`);
+        }
+      }
+    },
   },
 };
