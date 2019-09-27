@@ -7,6 +7,7 @@ $ npm i verbal-time
 ```
 
 ## Usage
+### Basic
 ``` js
 const verbalTime = require('verbal-time');
 
@@ -20,7 +21,7 @@ console.log(verbalTime(new Date('2019-09-27 06:30')));  // Половина се
 ``` js
 const verbalTime = require('verbal-time')({ lang: 'ua' });
 
-console.log(verbalTime(new Date('2019-09-27 15:00')));  // Тертя дня
+console.log(verbalTime(new Date('2019-09-27 15:00')));  // Третя дня
 console.log(verbalTime(new Date('2019-09-27 19:20')));  // 20 хвилин на восьму
 console.log(verbalTime(new Date('2019-09-27 06:30')));  // Пів на сьому
 console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 п'ята
@@ -32,7 +33,7 @@ console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 хвилин 
 ## Configuration properties
 `lang`: 'ru' or 'ua' (default **'ru'**) — Russian or Ukrainian text language.
 
-`countDownFrom`: 0..60 (default **30**) — the first minute that begins to be like example.
+`countDownFrom`: 0..60 (default **30**) — the first minute that begins to be like in example.
 ### Example
 ``` js
 const verbalTime = require('verbal-time')({ countDownFrom: 35 });
