@@ -1,14 +1,10 @@
 {
   "name": "verbal-time",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Spells time with words",
   "main": "verbalTime.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha test"
-  },
+  "directories": {},
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArthurKa/verbal-time.git"

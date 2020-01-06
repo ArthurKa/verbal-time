@@ -1,3 +1,5 @@
+# verbal-time
+
 Spells time with words. Supports only **Russian** and **Ukrainian** languages.
 
 ## Installation
@@ -64,4 +66,5 @@ verbalTime({ spellLastMinuteAsWord: false });
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
+---
 Your improve suggestions and bug reports are welcome any time.
