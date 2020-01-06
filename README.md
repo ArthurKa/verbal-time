@@ -66,5 +66,9 @@ verbalTime({ spellLastMinuteAsWord: false });
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
+## Testing
+No testing functionality provided.
+
 ---
+
 Your improve suggestions and bug reports are welcome any time.
