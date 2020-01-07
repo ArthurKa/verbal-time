@@ -1,11 +1,17 @@
-# verbal-time
+# verbal-time@2.0.3
+
+[![Dependencies](https://img.shields.io/librariesio/release/npm/verbal-time/2.0.3)](https://libraries.io/npm/verbal-time/2.0.3)
+[![Vulnerabilities](https://snyk.io/test/npm/verbal-time/2.0.3/badge.svg)](https://snyk.io/test/npm/verbal-time/2.0.3)
+[![Install size](https://packagephobia.now.sh/badge?p=verbal-time@2.0.3)](https://packagephobia.now.sh/result?p=verbal-time@2.0.3)
+[![NPM-version](https://img.shields.io/badge/npm-v2.0.3-blue.svg)](https://www.npmjs.com/package/verbal-time/v/2.0.3)
+[![Total downloads](https://img.shields.io/npm/dt/verbal-time?label=total%20downloads)](https://npm-stat.com/charts.html?package=verbal-time)
 
 Spells time with words. Supports only **Russian** and **Ukrainian** languages.
 
 ## Installation
 `verbal-time` is available via npm:
 ``` bash
-$ npm i verbal-time
+$ npm i verbal-time@2.0.3
 ```
 
 ## Usage
