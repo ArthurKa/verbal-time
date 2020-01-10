@@ -1,18 +1,8 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/verbal-time/2.0.4?label=all%20dependencies)](https://libraries.io/npm/verbal-time/2.0.4)
-[![Known vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/verbal-time@2.0.4?label=known%20vulnerabilities)](https://snyk.io/test/npm/verbal-time/2.0.4)
-[![NPM-version](https://img.shields.io/badge/npm-v2.0.4-blue.svg)](https://www.npmjs.com/package/verbal-time/v/2.0.4)
-[![Install size](https://packagephobia.now.sh/badge?p=verbal-time@2.0.4)](https://packagephobia.now.sh/result?p=verbal-time@2.0.4)
-[![Total downloads](https://img.shields.io/npm/dt/verbal-time?label=total%20downloads)](https://npm-stat.com/charts.html?package=verbal-time)
-
-# verbal-time@2.0.4
+<header>
 
 Spells time with words. Supports only **Russian** and **Ukrainian** languages.
 
-## Installation
-`verbal-time` is available via npm:
-``` bash
-$ npm i verbal-time@2.0.4
-```
+<installation>
 
 ## Usage
 ### Basic
@@ -72,9 +62,4 @@ verbalTime({ spellLastMinuteAsWord: false });
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
-## Testing
-No testing functionality provided.
-
----
-
-Your improve suggestions and bug reports are welcome any time.
+<footerNoTesting>
