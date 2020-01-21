@@ -1,6 +1,6 @@
 {
   "name": "verbal-time",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Spells time with words.",
   "main": "verbalTime.js",
   "directories": {},
@@ -15,7 +15,10 @@
     "spell time",
     "write time"
   ],
-  "author": "ArthurKa",
+  "author": {
+    "name": "ArthurKa",
+    "email": "arthur.katruk@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArthurKa/verbal-time/issues"
