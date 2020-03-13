@@ -1,13 +1,13 @@
 <header>
 
-Spells time with words. Supports only **Russian** and **Ukrainian** languages.
+Spells time in words. Supports only **Russian** and **Ukrainian** languages.
 
 <installation>
 
 ## Usage
 ### Basic
 ``` js
-const verbalTime = require('verbal-time');
+const verbalTime = require('.');
 
 console.log(verbalTime(new Date('2019-09-27 12:00')));  // Полдень
 console.log(verbalTime(new Date('2019-09-27 12:20')));  // 20 минут первого
@@ -17,7 +17,7 @@ console.log(verbalTime(new Date('2019-09-27 06:30')));  // Половина се
 
 ### With configuration
 ``` js
-const verbalTime = require('verbal-time')({ lang: 'ua' });
+const verbalTime = require('.')({ lang: 'ua' });
 
 console.log(verbalTime(new Date('2019-09-27 15:00')));  // Третя дня
 console.log(verbalTime(new Date('2019-09-27 19:20')));  // 20 хвилин на восьму
@@ -34,7 +34,7 @@ console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 хвилин 
 `countDownFrom`: 0..60 (default **30**) — the first minute that begins to be like in example.
 ### Example
 ``` js
-const verbalTime = require('verbal-time')({ countDownFrom: 35 });
+const verbalTime = require('.')({ countDownFrom: 35 });
 
 console.log(verbalTime(new Date('2019-09-27 16:34')));  // 34 минуты пятого
 console.log(verbalTime(new Date('2019-09-27 16:35')));  // Без 25 пять
@@ -43,7 +43,7 @@ console.log(verbalTime(new Date('2019-09-27 16:35')));  // Без 25 пять
 `spellCountDownMinutes`: Boolean (default **false**).
 ### Example
 ``` js
-const verbalTime = require('verbal-time');
+const verbalTime = require('.');
 
 console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 десять
 
@@ -54,7 +54,7 @@ console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 минут �
 `spellLastMinuteAsWord`: Boolean (default **true**) — to spell "1" or "минуты" last minute every hour.
 ### Example
 ``` js
-const verbalTime = require('verbal-time');
+const verbalTime = require('.');
 
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без минуты десять
 
@@ -62,4 +62,6 @@ verbalTime({ spellLastMinuteAsWord: false });
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
-<footerNoTesting>
+<noTesting>
+
+<suggestions>
