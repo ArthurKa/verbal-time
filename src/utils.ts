@@ -9,7 +9,7 @@ export const throwIf = {
     }
   },
   notAllowedLang(obj: Record<string, any>): void | never {
-    for(const key in obj) {
+    for(const key of Object.keys(obj)) {
       const langs = ['ru', 'ua'];
       if(!langs.includes(obj[key])) {
         throw new Error(`Property "${key}" should be one of provided: ${langs.join(', ')}.`);
@@ -23,7 +23,7 @@ export const throwIf = {
   },
   notNumber(obj: Record<string, any>): void | never {
     for(const key in obj) {
-      if(typeOf(obj[key]) !== 'Number' || isNaN(obj[key])) {
+      if(typeOf(obj[key]) !== 'Number' || Number.isNaN(obj[key])) {
         throw new Error(`Property "${key}" should be a number.`);
       }
     }
@@ -44,4 +44,4 @@ export const throwIf = {
       }
     }
   },
-}
+};

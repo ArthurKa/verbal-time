@@ -1,6 +1,6 @@
 import declineWord from 'decline-word';
 
-export const exactHours= {
+export const exactHours = {
   ru: [
     'Полночь',
     'Час ночи',

@@ -23,11 +23,11 @@ const Settings = function() {
       value: (obj: Partial<IParams>) => {
         throwIf.notEnumerableProperty(res, obj);
 
-        for(const key in obj) {
+        for(const key of Object.keys(obj)) {
           const k = key as keyof IParams;
           const val = obj[k];
           if(val !== undefined) {
-            // @ts-ignore
+            // @ts-expect-error
             res[k] = val;
           }
         }
