@@ -7,7 +7,7 @@ Spells time in words. Supports only **Russian** and **Ukrainian** languages.
 ## Usage
 ### Basic
 ```ts
-import verbalTime from './verbal-time';
+import verbalTime from './verbal-time/src';
 
 console.log(verbalTime(new Date('2019-09-27 12:00')));  // Полдень
 console.log(verbalTime(new Date('2019-09-27 12:20')));  // 20 минут первого
@@ -17,7 +17,7 @@ console.log(verbalTime(new Date('2019-09-27 06:30')));  // Половина се
 
 ### With configuration
 ```ts
-import verbalTime from './verbal-time';
+import verbalTime from './verbal-time/src';
 
 verbalTime({ lang: 'ua' });
 
@@ -36,7 +36,7 @@ console.log(verbalTime(new Date('2019-09-27 16:40')));  // За 20 хвилин 
 `countDownFrom`: 0..60 (default **30**) — the first minute that begins to be like in example.
 ### Example
 ```ts
-import verbalTime from './verbal-time';
+import verbalTime from './verbal-time/src';
 
 verbalTime({ countDownFrom: 35 });
 
@@ -47,7 +47,7 @@ console.log(verbalTime(new Date('2019-09-27 16:35')));  // Без 25 пять
 `spellCountDownMinutes`: Boolean (default **false**).
 ### Example
 ```ts
-import verbalTime from './verbal-time';
+import verbalTime from './verbal-time/src';
 
 console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 десять
 
@@ -58,7 +58,7 @@ console.log(verbalTime(new Date('2019-09-27 21:53')));  // Без 7 минут �
 `spellLastMinuteAsWord`: Boolean (default **true**) — to spell "1" or "минуты" last minute every hour.
 ### Example
 ```ts
-import verbalTime from './verbal-time';
+import verbalTime from './verbal-time/src';
 
 console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без минуты десять
 

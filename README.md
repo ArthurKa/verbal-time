@@ -3,7 +3,7 @@
 [![Commits](https://flat.badgen.net/github/commits/ArthurKa/verbal-time)](https://github.com/ArthurKa/verbal-time/commits/master)
 [![NPM-version](https://img.shields.io/badge/npm-v2.1.0-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/verbal-time/v/2.1.0)
 [![Total downloads](https://img.shields.io/npm/dt/verbal-time?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=verbal-time)
-[![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "Have any questions? You are always welcome.")](https://github.com/ArthurKa/verbal-time/issues)\
+[![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "GitHub")](https://github.com/ArthurKa)\
 [![Publish size](https://flat.badgen.net/packagephobia/publish/verbal-time@2.1.0?label=publish 'Publish size of verbal-time@2.1.0')](https://packagephobia.now.sh/result?p=verbal-time@2.1.0)
 [![Install size](https://flat.badgen.net/packagephobia/install/verbal-time@2.1.0?label=install 'Install size of verbal-time@2.1.0')](https://packagephobia.now.sh/result?p=verbal-time@2.1.0)
 [![Minified size](https://img.shields.io/bundlephobia/min/verbal-time@2.1.0?style=flat-square&label=minified "Minified size of verbal-time@2.1.0")](https://bundlephobia.com/result?p=verbal-time@2.1.0)
@@ -14,8 +14,8 @@
 Spells time in words. Supports only **Russian** and **Ukrainian** languages.
 
 ## Installation
-`verbal-time` is available via npm:
-``` bash
+`verbal-time` is available via NPM:
+```bash
 $ npm i verbal-time@2.1.0
 ```
 
@@ -82,7 +82,7 @@ console.log(verbalTime(new Date('2019-09-27 21:59')));  // Без 1 десять
 ```
 
 ## Testing
-Manually tested by developer. Automated tests are not provided.
+Manually tested by the developer during development. Automated tests are not provided.
 
 ## See also
 - [decline-word](https://www.npmjs.com/package/decline-word)
