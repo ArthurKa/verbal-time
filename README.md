@@ -1,22 +1,22 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/verbal-time/2.1.0?style=flat-square "All dependencies of verbal-time@2.1.0")](https://libraries.io/npm/verbal-time/2.1.0)
-[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/verbal-time@2.1.0?style=flat-square "Reported vulnerabilities of verbal-time@2.1.0")](https://snyk.io/test/npm/verbal-time/2.1.0)
+[![All dependencies](https://img.shields.io/librariesio/release/npm/verbal-time/2.2.0?style=flat-square "All dependencies of verbal-time@2.2.0")](https://libraries.io/npm/verbal-time/2.2.0)
+[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/verbal-time@2.2.0?style=flat-square "Reported vulnerabilities of verbal-time@2.2.0")](https://snyk.io/test/npm/verbal-time/2.2.0)
 [![Commits](https://flat.badgen.net/github/commits/ArthurKa/verbal-time)](https://github.com/ArthurKa/verbal-time/commits/master)
-[![NPM-version](https://img.shields.io/badge/npm-v2.1.0-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/verbal-time/v/2.1.0)
+[![NPM-version](https://img.shields.io/badge/npm-v2.2.0-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/verbal-time/v/2.2.0)
 [![Total downloads](https://img.shields.io/npm/dt/verbal-time?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=verbal-time)
 [![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "GitHub")](https://github.com/ArthurKa)\
-[![Publish size](https://flat.badgen.net/packagephobia/publish/verbal-time@2.1.0?label=publish 'Publish size of verbal-time@2.1.0')](https://packagephobia.now.sh/result?p=verbal-time@2.1.0)
-[![Install size](https://flat.badgen.net/packagephobia/install/verbal-time@2.1.0?label=install 'Install size of verbal-time@2.1.0')](https://packagephobia.now.sh/result?p=verbal-time@2.1.0)
-[![Minified size](https://img.shields.io/bundlephobia/min/verbal-time@2.1.0?style=flat-square&label=minified "Minified size of verbal-time@2.1.0")](https://bundlephobia.com/result?p=verbal-time@2.1.0)
-[![Minified + gzipped size](https://img.shields.io/bundlephobia/minzip/verbal-time@2.1.0?style=flat-square&label=minzipped "Minified + gzipped size of verbal-time@2.1.0")](https://bundlephobia.com/result?p=verbal-time@2.1.0)
+[![Publish size](https://flat.badgen.net/packagephobia/publish/verbal-time@2.2.0?label=publish 'Publish size of verbal-time@2.2.0')](https://packagephobia.now.sh/result?p=verbal-time@2.2.0)
+[![Install size](https://flat.badgen.net/packagephobia/install/verbal-time@2.2.0?label=install 'Install size of verbal-time@2.2.0')](https://packagephobia.now.sh/result?p=verbal-time@2.2.0)
+[![Minified size](https://img.shields.io/bundlephobia/min/verbal-time@2.2.0?style=flat-square&label=minified "Minified size of verbal-time@2.2.0")](https://bundlephobia.com/result?p=verbal-time@2.2.0)
+[![Minified + gzipped size](https://img.shields.io/bundlephobia/minzip/verbal-time@2.2.0?style=flat-square&label=minzipped "Minified + gzipped size of verbal-time@2.2.0")](https://bundlephobia.com/result?p=verbal-time@2.2.0)
 
-# verbal-time@2.1.0
+# verbal-time@2.2.0
 
 Spells time in words. Supports only **Russian** and **Ukrainian** languages.
 
 ## Installation
 `verbal-time` is available via NPM:
 ```bash
-$ npm i verbal-time@2.1.0
+$ npm i verbal-time@2.2.0
 ```
 
 ## Usage
